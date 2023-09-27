@@ -29,7 +29,8 @@ class MyButton extends StatelessWidget {
         padding: const EdgeInsets.all(25),
         margin: const EdgeInsets.symmetric(horizontal: 25),
         decoration: BoxDecoration(
-            color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+            color: const Color.fromARGB(255, 0, 102, 255),
+            borderRadius: BorderRadius.circular(20)),
         child: Center(
           child: Text(
             text,
@@ -115,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
 
-                const SizedBox(height: 70),
+                const SizedBox(height: 20),
 
                 // Email Text field
                 Padding(
@@ -143,7 +144,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       prefixIcon: const Icon(
                         CupertinoIcons.mail,
-                        color: Color(0xffE8ECF4),
+                        color: Color.fromARGB(255, 158, 158, 158),
                       ),
                     ),
                   ),
@@ -242,7 +243,9 @@ class _LoginPageState extends State<LoginPage> {
                         onTap: () {},
                         child: const Text(
                           "Forgot Password",
-                          style: TextStyle(color: Colors.blue),
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 0, 102, 255),
+                          ),
                         ),
                       ),
                     ],
@@ -256,7 +259,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
 
                 const SizedBox(
-                  height: 40,
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
@@ -336,7 +339,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: const Text(
                           'Register',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 53, 114, 194),
+                            color: Color.fromARGB(255, 0, 102, 255),
                             fontSize: 15,
                           ),
                         ),
@@ -391,7 +394,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ),
 
-                const SizedBox(height: 70),
+                const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 25.0, vertical: 10.0),
@@ -417,7 +420,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       prefixIcon: const Icon(
                         CupertinoIcons.person,
-                        color: Color(0xffE8ECF4),
+                        color: Color.fromARGB(255, 118, 118, 118),
                       ),
                     ),
                   ),
@@ -448,7 +451,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       prefixIcon: const Icon(
                         CupertinoIcons.mail,
-                        color: Color(0xffE8ECF4),
+                        color: Color.fromARGB(255, 118, 118, 118),
                       ),
                     ),
                   ),
@@ -479,7 +482,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       prefixIcon: const Icon(
                         CupertinoIcons.phone,
-                        color: Color(0xffE8ECF4),
+                        color: Color.fromARGB(255, 118, 118, 118),
                       ),
                     ),
                   ),
@@ -505,7 +508,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             child: const Text(
                               'Terms & Conditions',
                               style: TextStyle(
-                                color: Color(0xff356dc2),
+                                color: Color.fromARGB(255, 0, 102, 255),
                                 fontSize: 12,
                               ),
                             ),
@@ -528,7 +531,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           Text(
                             'Privacy Policy',
                             style: TextStyle(
-                              color: Color(0xff356dc2),
+                              color: Color.fromARGB(255, 0, 102, 255),
                               fontSize: 12,
                             ),
                           ),
