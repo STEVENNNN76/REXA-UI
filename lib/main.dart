@@ -263,7 +263,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 25.0, vertical: 10.0),
+                      horizontal: 20.0, vertical: 10.0),
                   child: Column(
                     children: [
                       const Row(
@@ -294,21 +294,38 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       const SizedBox(height: 20),
                       Container(
-                        padding: const EdgeInsets.all(30),
+                        padding: const EdgeInsets.all(25),
                         margin: const EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 175, 193, 207),
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: const Center(
-                          child: Text(
-                            'Login with Google',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                left: 0,
+                              ), // Adjust the spacing as needed
+                              child: Image.asset(
+                                'lib/components/Google.png',
+                                width: 24,
+                                height: 24,
+                              ), // Replace with your image path and dimensions
                             ),
-                          ),
+                            const Expanded(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  'Login with Google',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
