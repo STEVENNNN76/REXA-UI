@@ -138,7 +138,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       fillColor: Colors.white,
                       filled: true,
-                      hintText: "example@gmail.com",
+                      hintText: "Example@gmail.com",
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
