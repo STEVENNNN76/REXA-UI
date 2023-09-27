@@ -297,7 +297,7 @@ class _LoginPageState extends State<LoginPage> {
                         padding: const EdgeInsets.all(25),
                         margin: const EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 175, 193, 207),
+                          color: Color.fromARGB(153, 230, 231, 234),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -305,12 +305,12 @@ class _LoginPageState extends State<LoginPage> {
                             Padding(
                               padding: const EdgeInsets.only(
                                 left: 0,
-                              ), // Adjust the spacing as needed
+                              ),
                               child: Image.asset(
                                 'lib/components/Google.png',
                                 width: 24,
                                 height: 24,
-                              ), // Replace with your image path and dimensions
+                              ),
                             ),
                             const Expanded(
                               child: Align(
@@ -318,7 +318,7 @@ class _LoginPageState extends State<LoginPage> {
                                 child: Text(
                                   'Login with Google',
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Color.fromARGB(255, 103, 100, 100),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
                                   ),
