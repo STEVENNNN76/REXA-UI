@@ -353,7 +353,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 }
 
-//Sign up
+//Sign up Page
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key});
 
@@ -497,7 +497,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             "By signing up, you agree to our ",
                             style: TextStyle(
                               color: Color(0xff1E232C),
-                              fontSize: 15,
+                              fontSize: 12,
                             ),
                           ),
                           const SizedBox(width: 4),
@@ -506,7 +506,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               'Terms & Conditions',
                               style: TextStyle(
                                 color: Color(0xff356dc2),
-                                fontSize: 15,
+                                fontSize: 12,
                               ),
                             ),
                           ),
@@ -521,7 +521,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             'and',
                             style: TextStyle(
                               color: Color(0xff1E232C),
-                              fontSize: 15,
+                              fontSize: 12,
                             ),
                           ),
                           SizedBox(width: 4),
@@ -529,7 +529,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             'Privacy Policy',
                             style: TextStyle(
                               color: Color(0xff356dc2),
-                              fontSize: 15,
+                              fontSize: 12,
                             ),
                           ),
                         ],
