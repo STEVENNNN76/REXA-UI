@@ -57,7 +57,7 @@ class OnboardPage3 extends StatelessWidget {
                     'lib/components/package.png',
                     width: 300,
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 37),
                   const Text(
                     "Pick up delivery",
                     style: TextStyle(
