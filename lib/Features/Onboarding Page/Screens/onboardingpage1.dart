@@ -55,7 +55,7 @@ class OnboardPage1 extends StatelessWidget {
                   const SizedBox(height: 100),
                   Image.asset(
                     'lib/components/magic-hands.png',
-                    width: 280,
+                    width: 300,
                   ),
                   // const SizedBox(height: 30),
                   const Text(

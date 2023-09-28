@@ -54,7 +54,7 @@ class OnboardPage2 extends StatelessWidget {
                   const SizedBox(height: 100),
                   Image.asset(
                     'lib/components/scooter.png',
-                    width: 320,
+                    width: 300,
                   ),
                   const SizedBox(height: 30),
                   const Text(
