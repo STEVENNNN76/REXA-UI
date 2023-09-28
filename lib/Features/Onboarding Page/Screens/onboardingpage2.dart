@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'onboardingpage3.dart';
+
 class OnboardPage2 extends StatelessWidget {
   const OnboardPage2({Key? key});
   @override
@@ -77,25 +79,30 @@ class OnboardPage2 extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 50),
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      Container(
-                        width: 70,
-                        height: 70,
-                        decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 0, 89, 255),
-                          shape: BoxShape.circle,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const OnboardPage3(),
                         ),
-                        child: const Center(
-                          child: Icon(
-                            CupertinoIcons.chevron_right,
-                            size: 25,
-                            color: Colors.white,
-                          ),
+                      );
+                    },
+                    child: Container(
+                      width: 70,
+                      height: 70,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 0, 89, 255),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          CupertinoIcons.chevron_right,
+                          size: 25,
+                          color: Colors.white,
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ],
               ),
