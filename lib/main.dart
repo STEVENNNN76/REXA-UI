@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'Features/Onboarding Page/Screens/onboardingpage1.dart';
-import 'Features/Onboarding Page/Screens/onboardingpage2.dart';
+//import 'Features/Onboarding Page/Screens/onboardingpage1.dart';
+//import 'Features/Onboarding Page/Screens/onboardingpage2.dart';
 import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
 
 void main() => runApp(const MyApp());
@@ -304,7 +304,7 @@ class _LoginPageState extends State<LoginPage> {
                         padding: const EdgeInsets.all(25),
                         margin: const EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(153, 230, 231, 234),
+                          color: const Color.fromARGB(153, 230, 231, 234),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -382,7 +382,7 @@ class _LoginPageState extends State<LoginPage> {
 
 //Sign up Page
 class SignUpPage extends StatefulWidget {
-  const SignUpPage({Key? key});
+  const SignUpPage({super.key});
 
   @override
   State<SignUpPage> createState() => _SignUpPageState();

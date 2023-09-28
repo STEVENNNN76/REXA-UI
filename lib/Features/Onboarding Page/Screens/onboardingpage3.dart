@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'onboardingpage1.dart';
 
 class OnboardPage3 extends StatelessWidget {
-  const OnboardPage3({Key? key});
+  const OnboardPage3({super.key});
 
   @override
   Widget build(BuildContext context) {
