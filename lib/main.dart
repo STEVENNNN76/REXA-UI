@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Features/Onboarding Page/Screens/onboardingpage1.dart';
+import 'Features/Onboarding Page/Screens/onboardingpage2.dart';
+import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       //home: const SignUpPage(),
-      home: LoginPage(),
+      //home: LoginPage(),
+      //home: OnboardPage1(),
+      //home: OnboardPage2(),
+      home: OnboardPage3(),
     );
   }
 }
