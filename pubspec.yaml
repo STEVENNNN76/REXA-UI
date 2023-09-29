@@ -15,6 +15,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
   cupertino_icons: ^1.0.2
+  introduction_screen: ^3.1.1	
 
 flutter:
   uses-material-design: true
@@ -23,3 +24,4 @@ flutter:
     - lib/components/magic-hands.png
     - lib/components/scooter.png
     - lib/components/package.png
+    - lib/components/rexa.png
