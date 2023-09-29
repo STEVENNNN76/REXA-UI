@@ -686,38 +686,44 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   );
                 }
               },
-              child: Container(
-                width: 70,
-                height: 70,
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 0, 89, 255),
-                  shape: BoxShape.circle,
-                ),
-                child: Center(
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      SizedBox(
-                        width:
-                            100, // Adjust the size of the CircularProgressIndicator
-                        height:
-                            100, // Adjust the size of the CircularProgressIndicator
-                        child: CircularProgressIndicator(
-                          value: currentPage / (_pages.length - 1),
-                          valueColor: const AlwaysStoppedAnimation<Color>(
-                            Color.fromARGB(255, 0, 89, 255),
-                          ),
-                          strokeWidth: 3, // Adjust the strokeWidth as desired
-                          backgroundColor: Colors.white,
+              child: SizedBox(
+                width:
+                    100, // size of the outer container (circular progress indicator)
+                height:
+                    100, // size of the outer container (circular progress indicator)
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width:
+                          70, //  size of the inner container (box decoration)
+                      height:
+                          70, //  size of the inner container (box decoration)
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 0, 89, 255),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          CupertinoIcons.chevron_right,
+                          size: 35, //the size of the arrow icon
+                          color: Colors.white,
                         ),
                       ),
-                      const Icon(
-                        CupertinoIcons.chevron_right,
-                        size: 40, // You can adjust the size of the arrow icon
-                        color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 80, // size of the CircularProgressIndicator
+                      height: 80, // the size of the CircularProgressIndicator
+                      child: CircularProgressIndicator(
+                        value: currentPage / (_pages.length - 1),
+                        valueColor: const AlwaysStoppedAnimation<Color>(
+                          Color.fromARGB(255, 0, 89, 255),
+                        ),
+                        strokeWidth: 3, // strokeWidth
+                        backgroundColor: Colors.white,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
