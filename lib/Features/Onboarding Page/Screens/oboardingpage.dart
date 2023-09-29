@@ -693,15 +693,35 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   color: Color.fromARGB(255, 0, 89, 255),
                   shape: BoxShape.circle,
                 ),
-                child: const Center(
-                  child: Icon(
-                    CupertinoIcons.chevron_right,
-                    size: 25,
-                    color: Colors.white,
+                child: Center(
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      SizedBox(
+                        width:
+                            100, // Adjust the size of the CircularProgressIndicator
+                        height:
+                            100, // Adjust the size of the CircularProgressIndicator
+                        child: CircularProgressIndicator(
+                          value: currentPage / (_pages.length - 1),
+                          valueColor: const AlwaysStoppedAnimation<Color>(
+                            Color.fromARGB(255, 0, 89, 255),
+                          ),
+                          strokeWidth: 3, // Adjust the strokeWidth as desired
+                          backgroundColor: Colors.white,
+                        ),
+                      ),
+                      const Icon(
+                        CupertinoIcons.chevron_right,
+                        size: 40, // You can adjust the size of the arrow icon
+                        color: Colors.white,
+                      ),
+                    ],
                   ),
                 ),
               ),
             ),
+
             const SizedBox(height: 25),
           ],
         ),
