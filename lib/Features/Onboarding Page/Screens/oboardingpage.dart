@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 /*
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -599,7 +597,7 @@ class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
   @override
-  _OnboardingScreenState createState() => _OnboardingScreenState();
+  State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
@@ -608,7 +606,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     const OnboardPage1(),
     const OnboardPage2(),
     const OnboardPage3(),
-    const OnboardPage4(), // Add the new page here
+    const OnboardPage4(),
   ];
   double currentPage = 0; // Track the current page for progress indicator
 
@@ -638,7 +636,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     child: const Icon(
                       CupertinoIcons.back,
                       size: 28,
-                      color: Color.fromARGB(255, 0, 89, 255),
+                      color: Color.fromARGB(255, 0, 51, 255),
                     ),
                   ),
                 if (currentPage !=
@@ -658,7 +656,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         "Skip",
                         style: TextStyle(
                           fontSize: 18,
-                          color: Color.fromARGB(255, 0, 89, 255),
+                          color: Color.fromARGB(255, 0, 51, 255),
                         ),
                       ),
                     ),
@@ -700,7 +698,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       height:
                           70, //  size of the inner container (box decoration)
                       decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 0, 89, 255),
+                        color: Color.fromARGB(255, 0, 51, 255),
                         shape: BoxShape.circle,
                       ),
                       child: const Center(
@@ -751,7 +749,7 @@ class OnboardPage1 extends StatelessWidget {
             'lib/components/rexa.png',
             width: 300,
           ),
-          const SizedBox(height: 100),
+          const SizedBox(height: 50),
         ],
       ),
     );
@@ -817,7 +815,7 @@ class OnboardPage3 extends StatelessWidget {
             'lib/components/scooter.png',
             width: 300,
           ),
-          const SizedBox(height: 35),
+          const SizedBox(height: 50),
           const Text(
             "Your order will be",
             style: TextStyle(
