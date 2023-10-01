@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 //import 'Features/Onboarding Page/Screens/onboardingpage2.dart';
 //import 'Features/Onboarding Page/Screens/oboardingpage.dart';
 //import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
+import 'Features/productdetails/Navbar/bottomnavbar.dart';
+import 'Features/productdetails/Screens/productbag.dart';
+import 'Features/productdetails/Screens/productdiscovery.dart';
 import 'Features/productdetails/Screens/productscreen.dart';
 
 void main() => runApp(const MyApp());
@@ -20,7 +23,10 @@ class MyApp extends StatelessWidget {
       //home: OnboardPage2(),
       //home: OnboardPage3(),
       //home: OnboardingScreen(),
-      home: ProductDetails(),
+      //home: ProductDetails(),
+      // home: BottomNavBar(),
+      // home: ProductBag(),
+      home: ProductDiscovery(),
     );
   }
 }

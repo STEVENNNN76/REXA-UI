@@ -31,3 +31,11 @@ flutter:
     - lib/components/Sneakers/Nike-4.jpg
     - lib/components/Sneakers/Nike-5.jpg
     - lib/components/Sneakers/Nike-6.jpg
+    - lib/components/Bottom-NavIcon/NavIcon-1.png
+    - lib/components/Bottom-NavIcon/NavIcon-2.png
+    - lib/components/Bottom-NavIcon/NavIcon-3.png
+    - lib/components/Bottom-NavIcon/NavIcon-4.png
+    - lib/components/Men-Images/Nike-1.jpg
+    - lib/components/Men-Images/Nike-2.jpg
+    - lib/components/Men-Images/Nike-3.jpg
+    - lib/components/Men-Images/Nike-4.jpg
