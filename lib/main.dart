@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 //import 'Features/Onboarding Page/Screens/onboardingpage1.dart';
 //import 'Features/Onboarding Page/Screens/onboardingpage2.dart';
-import 'Features/Onboarding Page/Screens/oboardingpage.dart';
-import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
+//import 'Features/Onboarding Page/Screens/oboardingpage.dart';
+//import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
 import 'Features/productdetails/Screens/productscreen.dart';
 
 void main() => runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       //home: const SignUpPage(),
       //home: LoginPage(),
       //home: OnboardPage1(),
