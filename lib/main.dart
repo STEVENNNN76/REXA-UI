@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 //import 'Features/Onboarding Page/Screens/onboardingpage2.dart';
 import 'Features/Onboarding Page/Screens/oboardingpage.dart';
 import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
+import 'Features/productdetails/Screens/productscreen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,13 +13,14 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       //home: const SignUpPage(),
       //home: LoginPage(),
       //home: OnboardPage1(),
       //home: OnboardPage2(),
       //home: OnboardPage3(),
-      home: OnboardingScreen(),
+      //home: OnboardingScreen(),
+      home: ProductDetails(),
     );
   }
 }
