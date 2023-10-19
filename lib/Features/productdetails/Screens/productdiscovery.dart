@@ -43,7 +43,7 @@ class _ProductDiscoveryState extends State<ProductDiscovery> {
                 ),
               ),
               const SizedBox(height: 10),
-              Text(
+              const Text(
                 'Discovery',
                 style: TextStyle(
                   fontSize: 25,
@@ -116,7 +116,7 @@ class _ProductDiscoveryState extends State<ProductDiscovery> {
       child: Column(
         children: [
           Image.asset(
-            'assets/$productName.png', // Replace with your image path
+            'components/Product-Images/spider.png',
             height: 100,
             width: 100,
           ),

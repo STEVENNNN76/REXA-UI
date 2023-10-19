@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       //home: OnboardingScreen(),
       //home: ProductDetails(),
       // home: BottomNavBar(),
-      // home: ProductBag(),
+      //home: ProductBag(),
       home: ProductDiscovery(),
     );
   }
