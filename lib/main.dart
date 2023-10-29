@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 //import 'Features/Onboarding Page/Screens/oboardingpage.dart';
 //import 'Features/Onboarding Page/Screens/onboardingpage3.dart';
 import 'Features/productdetails/Navbar/bottomnavbar.dart';
+import 'Features/productdetails/Screens/payments.dart';
 import 'Features/productdetails/Screens/productbag.dart';
 import 'Features/productdetails/Screens/productdiscovery.dart';
 import 'Features/productdetails/Screens/productscreen.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       //home: const SignUpPage(),
       //home: LoginPage(),
       //home: OnboardPage1(),
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       //home: ProductDetails(),
       // home: BottomNavBar(),
       //home: ProductBag(),
-      home: ProductDiscovery(),
+      //home: ProductDiscovery(),
+      home: PaymentsPage(),
     );
   }
 }

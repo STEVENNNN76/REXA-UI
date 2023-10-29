@@ -25,6 +25,7 @@ flutter:
     - lib/components/scooter.png
     - lib/components/package.png
     - lib/components/rexa.png
+    - lib/components/receipt.png
     - lib/components/Sneakers/Nike-1.jpg
     - lib/components/Sneakers/Nike-2.jpg
     - lib/components/Sneakers/Nike-3.jpg
