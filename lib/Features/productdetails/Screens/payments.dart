@@ -88,6 +88,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                 ),
               ),
               const SizedBox(height: 10.0),
+
               //Text below [Orange Card]
               const Padding(
                 padding: EdgeInsets.only(left: 20.0),
@@ -97,6 +98,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                 ),
               ),
               const SizedBox(height: 20.0),
+
               // Radio Buttons Selection Field
               Row(
                 children: [
@@ -118,8 +120,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                           ),
                           const Text(
                             'UPI',
-                            style:
-                                TextStyle(fontSize: 18), // Increased text size
+                            style: TextStyle(fontSize: 18),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20.0),
@@ -142,6 +143,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                   ),
                 ],
               ),
+
               // UPI Radio Button Selection
               if (_selectedRadio == 0)
                 Column(
@@ -228,6 +230,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                     ),
                   ],
                 ),
+
               // Bank Account Radio Button Selection
               if (_selectedRadio == 1)
                 Column(
@@ -324,6 +327,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                     ),
                   ],
                 ),
+
               // Payment Policy Button
               Center(
                 child: GestureDetector(
@@ -345,6 +349,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                 ),
               ),
               const SizedBox(height: 80.0),
+
               // Check Box Field
               Padding(
                 padding: const EdgeInsets.only(left: 20.0),
@@ -368,6 +373,7 @@ class _PaymentsPageState extends State<PaymentsPage> {
                   ],
                 ),
               ),
+
               // Verify Button
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
